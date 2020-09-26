@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -900,16 +902,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDT-bK-A4N" userLabel="player1ScoreLabel">
-                                <rect key="frame" x="92" y="142" width="80" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="kxs-bT-dV0"/>
-                                    <constraint firstAttribute="height" constant="50" id="utm-oI-ZKF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99d-Lb-k1i" userLabel="player2ScoreLabel">
                                 <rect key="frame" x="503" y="142" width="80" height="50"/>
                                 <constraints>
@@ -920,69 +912,116 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oM-GG-o28" userLabel="player2Btn">
-                                <rect key="frame" x="543" y="230" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oM-GG-o28" userLabel="player2Btn">
+                                <rect key="frame" x="508" y="215" width="70" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Doe-jQ-b25"/>
+                                    <constraint firstAttribute="height" constant="50" id="vxb-vH-ZlF"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="player2BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qim-Tn-kqy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-kI-IMb" userLabel="player1Btn">
-                                <rect key="frame" x="102" y="230" width="30" height="30"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-kI-IMb" userLabel="player1Btn">
+                                <rect key="frame" x="97" y="215" width="70" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="U53-um-TqL"/>
+                                    <constraint firstAttribute="width" constant="70" id="dAz-E2-N37"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="player1BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qlf-5j-rxN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eub-QT-CzE">
-                                <rect key="frame" x="102" y="288" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASJ-GS-bup">
+                                <rect key="frame" x="523" y="270" width="40" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Wlf-z0-kW2"/>
+                                    <constraint firstAttribute="height" constant="30" id="imi-AK-qFl"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="-"/>
-                                <connections>
-                                    <action selector="player1BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8z-EJ-8cb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASJ-GS-bup">
-                                <rect key="frame" x="543" y="288" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="-"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="player2BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r8q-yC-ktY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibs-r7-cwR">
-                                <rect key="frame" x="309" y="201" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibs-r7-cwR">
+                                <rect key="frame" x="298.5" y="215" width="70" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="edc-rr-8uZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="kPz-V7-iML"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="deadBallBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H5W-DS-chN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ik2-cS-Jhj">
-                                <rect key="frame" x="309" y="254" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ik2-cS-Jhj">
+                                <rect key="frame" x="313.5" y="270" width="40" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C4K-KU-Q9x"/>
+                                    <constraint firstAttribute="width" constant="40" id="NTU-lT-kYE"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="-"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="deadBallBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0n-j4-cF3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Ball Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJL-90-VNJ" userLabel="totalBallCountLabel">
-                                <rect key="frame" x="303" y="334" width="136" height="21"/>
+                                <rect key="frame" x="313" y="334" width="43" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BJ-Wd-aUt">
-                                <rect key="frame" x="278" y="142" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BJ-Wd-aUt">
+                                <rect key="frame" x="258.5" y="120" width="150" height="30"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9tf-dF-MCq"/>
+                                    <constraint firstAttribute="width" constant="150" id="bem-J0-MVe"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Switch Player"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="switchPlayerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5q-1f-J02"/>
                                 </connections>
@@ -995,35 +1034,100 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Dead Balls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3y-q0-8Pk">
-                                <rect key="frame" x="516" y="334" width="123" height="21"/>
+                                <rect key="frame" x="466" y="334" width="123" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="testLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3B-LO-2TV">
-                                <rect key="frame" x="30" y="125" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eub-QT-CzE">
+                                <rect key="frame" x="112" y="270" width="40" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iU1-UC-PuT"/>
+                                    <constraint firstAttribute="width" constant="40" id="yZi-JX-rgf"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="-"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="player1BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8z-EJ-8cb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDT-bK-A4N" userLabel="player1ScoreLabel">
+                                <rect key="frame" x="92" y="142" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="kxs-bT-dV0"/>
+                                    <constraint firstAttribute="height" constant="50" id="utm-oI-ZKF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XF-lK-hf7">
+                                <rect key="frame" x="100.5" y="126" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balls Sunk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJB-eZ-Uev">
+                                <rect key="frame" x="101" y="192" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsQ-Ul-zDW">
+                                <rect key="frame" x="511.5" y="125" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balls Sunk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzA-ws-qeE">
+                                <rect key="frame" x="511" y="192" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Lng-kI-IMb" firstAttribute="top" secondItem="zDT-bK-A4N" secondAttribute="bottom" constant="52" id="4MS-Ha-8pR"/>
+                            <constraint firstItem="Ik2-cS-Jhj" firstAttribute="top" secondItem="ibs-r7-cwR" secondAttribute="bottom" constant="5" id="1Xq-4G-GLa"/>
+                            <constraint firstItem="ASJ-GS-bup" firstAttribute="centerX" secondItem="8oM-GG-o28" secondAttribute="centerX" id="1iw-az-IUr"/>
+                            <constraint firstItem="7XF-lK-hf7" firstAttribute="centerX" secondItem="zDT-bK-A4N" secondAttribute="centerX" id="3nY-ZK-cdD"/>
+                            <constraint firstItem="ibs-r7-cwR" firstAttribute="top" secondItem="9BJ-Wd-aUt" secondAttribute="bottom" constant="65" id="5UA-5L-qoI"/>
+                            <constraint firstItem="ibs-r7-cwR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AKr-bJ-bVs"/>
+                            <constraint firstItem="8oM-GG-o28" firstAttribute="centerX" secondItem="99d-Lb-k1i" secondAttribute="centerX" id="ANf-8I-IkU"/>
+                            <constraint firstItem="BsQ-Ul-zDW" firstAttribute="centerX" secondItem="99d-Lb-k1i" secondAttribute="centerX" id="BkW-VE-O4f"/>
+                            <constraint firstItem="Eub-QT-CzE" firstAttribute="centerX" secondItem="zDT-bK-A4N" secondAttribute="centerX" id="Ek4-lf-AR8"/>
+                            <constraint firstItem="ASJ-GS-bup" firstAttribute="centerY" secondItem="Ik2-cS-Jhj" secondAttribute="centerY" id="Jly-Uv-ZQ3"/>
+                            <constraint firstItem="ASJ-GS-bup" firstAttribute="centerX" secondItem="8oM-GG-o28" secondAttribute="centerX" id="KZt-yY-nvC"/>
+                            <constraint firstItem="9BJ-Wd-aUt" firstAttribute="top" secondItem="sNS-Vv-09D" secondAttribute="bottom" constant="20" id="L6H-8w-OWt"/>
                             <constraint firstItem="sNS-Vv-09D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="Lgw-1n-pdH"/>
+                            <constraint firstItem="Eub-QT-CzE" firstAttribute="centerX" secondItem="zDT-bK-A4N" secondAttribute="centerX" id="M2d-p7-8E5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AJL-90-VNJ" secondAttribute="bottom" constant="72" id="Qxc-8S-Ker"/>
+                            <constraint firstItem="ibs-r7-cwR" firstAttribute="centerY" secondItem="Lng-kI-IMb" secondAttribute="centerY" id="Ugb-9J-dQr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="99d-Lb-k1i" secondAttribute="trailing" constant="84" id="VEy-at-qA0"/>
                             <constraint firstItem="AJL-90-VNJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WMV-px-5Wf"/>
+                            <constraint firstItem="ASJ-GS-bup" firstAttribute="centerY" secondItem="Ik2-cS-Jhj" secondAttribute="centerY" id="cAv-wR-Wp0"/>
+                            <constraint firstItem="9BJ-Wd-aUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dqd-ZY-n7t"/>
+                            <constraint firstItem="8oM-GG-o28" firstAttribute="centerX" secondItem="99d-Lb-k1i" secondAttribute="centerX" id="dw7-WR-Xfm"/>
                             <constraint firstItem="zDT-bK-A4N" firstAttribute="baseline" secondItem="99d-Lb-k1i" secondAttribute="baseline" id="fI8-8f-kS6"/>
                             <constraint firstItem="sNS-Vv-09D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gxn-BF-MMm"/>
                             <constraint firstItem="zDT-bK-A4N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="jFc-cm-V7z"/>
-                            <constraint firstItem="zDT-bK-A4N" firstAttribute="trailing" secondItem="Lng-kI-IMb" secondAttribute="trailing" id="rem-XL-O37"/>
+                            <constraint firstItem="Ik2-cS-Jhj" firstAttribute="centerY" secondItem="Eub-QT-CzE" secondAttribute="centerY" id="jPo-Bb-eP6"/>
+                            <constraint firstItem="Eub-QT-CzE" firstAttribute="centerX" secondItem="Lng-kI-IMb" secondAttribute="centerX" id="ktZ-zp-ONl"/>
+                            <constraint firstItem="8oM-GG-o28" firstAttribute="centerY" secondItem="ibs-r7-cwR" secondAttribute="centerY" id="pUj-4o-QbG"/>
+                            <constraint firstItem="Ik2-cS-Jhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4d-qk-uaw"/>
                             <constraint firstItem="zDT-bK-A4N" firstAttribute="top" secondItem="sNS-Vv-09D" secondAttribute="bottom" constant="42" id="whg-2t-dDe"/>
                             <constraint firstItem="AJL-90-VNJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="312" id="zpQ-bd-3yy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="gm10DBScoreLabel" destination="4Cg-GU-YuD" id="Zrc-Ia-tvk"/>
@@ -1102,4 +1206,15 @@
             <point key="canvasLocation" x="138.98050974512745" y="136.80000000000001"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
