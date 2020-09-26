@@ -1068,36 +1068,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XF-lK-hf7">
-                                <rect key="frame" x="100.5" y="126" width="63" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XF-lK-hf7">
+                                <rect key="frame" x="100.5" y="123.5" width="63" height="23.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balls Sunk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJB-eZ-Uev">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Balls Sunk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJB-eZ-Uev">
                                 <rect key="frame" x="101" y="192" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsQ-Ul-zDW">
-                                <rect key="frame" x="511.5" y="125" width="63" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Balls Sunk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzA-ws-qeE">
+                                <rect key="frame" x="511" y="192" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsQ-Ul-zDW">
+                                <rect key="frame" x="511.5" y="123.5" width="63" height="23.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balls Sunk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzA-ws-qeE">
-                                <rect key="frame" x="511" y="192" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dead Ball" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mas-y1-m9n">
+                                <rect key="frame" x="303" y="192" width="63" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="BsQ-Ul-zDW" firstAttribute="centerY" secondItem="9BJ-Wd-aUt" secondAttribute="centerY" id="04r-Gc-nxP"/>
+                            <constraint firstItem="7XF-lK-hf7" firstAttribute="centerY" secondItem="9BJ-Wd-aUt" secondAttribute="centerY" id="0sb-ct-eN3"/>
                             <constraint firstItem="Ik2-cS-Jhj" firstAttribute="top" secondItem="ibs-r7-cwR" secondAttribute="bottom" constant="5" id="1Xq-4G-GLa"/>
                             <constraint firstItem="ASJ-GS-bup" firstAttribute="centerX" secondItem="8oM-GG-o28" secondAttribute="centerX" id="1iw-az-IUr"/>
                             <constraint firstItem="7XF-lK-hf7" firstAttribute="centerX" secondItem="zDT-bK-A4N" secondAttribute="centerX" id="3nY-ZK-cdD"/>
@@ -1109,12 +1115,16 @@
                             <constraint firstItem="ASJ-GS-bup" firstAttribute="centerY" secondItem="Ik2-cS-Jhj" secondAttribute="centerY" id="Jly-Uv-ZQ3"/>
                             <constraint firstItem="ASJ-GS-bup" firstAttribute="centerX" secondItem="8oM-GG-o28" secondAttribute="centerX" id="KZt-yY-nvC"/>
                             <constraint firstItem="9BJ-Wd-aUt" firstAttribute="top" secondItem="sNS-Vv-09D" secondAttribute="bottom" constant="20" id="L6H-8w-OWt"/>
+                            <constraint firstItem="UJB-eZ-Uev" firstAttribute="centerY" secondItem="Mas-y1-m9n" secondAttribute="centerY" id="LDG-TT-uvN"/>
                             <constraint firstItem="sNS-Vv-09D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="Lgw-1n-pdH"/>
                             <constraint firstItem="Eub-QT-CzE" firstAttribute="centerX" secondItem="zDT-bK-A4N" secondAttribute="centerX" id="M2d-p7-8E5"/>
+                            <constraint firstItem="GzA-ws-qeE" firstAttribute="centerX" secondItem="8oM-GG-o28" secondAttribute="centerX" id="MiZ-Va-HAv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AJL-90-VNJ" secondAttribute="bottom" constant="72" id="Qxc-8S-Ker"/>
                             <constraint firstItem="ibs-r7-cwR" firstAttribute="centerY" secondItem="Lng-kI-IMb" secondAttribute="centerY" id="Ugb-9J-dQr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="99d-Lb-k1i" secondAttribute="trailing" constant="84" id="VEy-at-qA0"/>
                             <constraint firstItem="AJL-90-VNJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WMV-px-5Wf"/>
+                            <constraint firstItem="ibs-r7-cwR" firstAttribute="top" secondItem="Mas-y1-m9n" secondAttribute="bottom" constant="2" id="XDB-Sd-8Qi"/>
+                            <constraint firstItem="GzA-ws-qeE" firstAttribute="centerY" secondItem="Mas-y1-m9n" secondAttribute="centerY" id="aDr-ye-ie7"/>
                             <constraint firstItem="ASJ-GS-bup" firstAttribute="centerY" secondItem="Ik2-cS-Jhj" secondAttribute="centerY" id="cAv-wR-Wp0"/>
                             <constraint firstItem="9BJ-Wd-aUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dqd-ZY-n7t"/>
                             <constraint firstItem="8oM-GG-o28" firstAttribute="centerX" secondItem="99d-Lb-k1i" secondAttribute="centerX" id="dw7-WR-Xfm"/>
@@ -1123,9 +1133,11 @@
                             <constraint firstItem="zDT-bK-A4N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="jFc-cm-V7z"/>
                             <constraint firstItem="Ik2-cS-Jhj" firstAttribute="centerY" secondItem="Eub-QT-CzE" secondAttribute="centerY" id="jPo-Bb-eP6"/>
                             <constraint firstItem="Eub-QT-CzE" firstAttribute="centerX" secondItem="Lng-kI-IMb" secondAttribute="centerX" id="ktZ-zp-ONl"/>
+                            <constraint firstItem="UJB-eZ-Uev" firstAttribute="centerX" secondItem="Lng-kI-IMb" secondAttribute="centerX" id="owp-Jm-Fyd"/>
                             <constraint firstItem="8oM-GG-o28" firstAttribute="centerY" secondItem="ibs-r7-cwR" secondAttribute="centerY" id="pUj-4o-QbG"/>
                             <constraint firstItem="Ik2-cS-Jhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4d-qk-uaw"/>
                             <constraint firstItem="zDT-bK-A4N" firstAttribute="top" secondItem="sNS-Vv-09D" secondAttribute="bottom" constant="42" id="whg-2t-dDe"/>
+                            <constraint firstItem="Mas-y1-m9n" firstAttribute="centerX" secondItem="ibs-r7-cwR" secondAttribute="centerX" id="yyt-dr-ZTq"/>
                             <constraint firstItem="AJL-90-VNJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="312" id="zpQ-bd-3yy"/>
                         </constraints>
                     </view>
