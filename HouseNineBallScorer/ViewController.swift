@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     var game14 = Game(playerA: 0, playerB: 0, deadBall: 0, gameTotal: 0, innings: 0)
     var game15 = Game(playerA: 0, playerB: 0, deadBall: 0, gameTotal: 0, innings: 0)
     
-    var nineballValue = 3
+    var nineballValue = 2
     var totalBallCount = 0
         
     var innings = 0
@@ -551,9 +551,9 @@ class ViewController: UIViewController {
             
              totals()
             
-//            if nineballValue == 2 {
-//                deadBallBtnPressedPlus_value2()
-//            }
+            if nineballValue == 2 {
+                deadBallBtnPressedPlus_value2()
+            }
             if nineballValue == 3 {
                 deadBallBtnPressedPlus_value3()
             }
@@ -635,9 +635,9 @@ class ViewController: UIViewController {
             
             totals()
             
-//            if nineballValue == 2 {
-//                deadBallBtnPressedMinus_value2()
-//            }
+            if nineballValue == 2 {
+                deadBallBtnPressedMinus_value2()
+            }
             if nineballValue == 3 {
                 deadBallBtnPressedMinus_value3()
             }
@@ -1680,15 +1680,136 @@ class ViewController: UIViewController {
 
     }
 //
-//    func deadBallBtnPressedPlus_value2() {
+    func deadBallBtnPressedPlus_value2() {
+        
+        if game1.gameTotal >= 0 && game1.gameTotal < 10 {
+            game1.deadBall = game1.deadBall + 1
+        }
+
+        if totalBallCount >= 11 && game2.gameTotal < 10 {
+            game2.deadBall = game2.deadBall + 1
+        }
+
+        if totalBallCount >= 21 && game3.gameTotal < 10 {
+            game3.deadBall = game3.deadBall + 1
+        }
+
+        if totalBallCount >= 31 && game4.gameTotal < 10 {
+            game4.deadBall = game4.deadBall + 1
+        }
+
+        if totalBallCount >= 41 && game5.gameTotal < 10 {
+            game5.deadBall = game5.deadBall + 1
+        }
+
+        if totalBallCount >= 51 && game6.gameTotal < 10 {
+            game6.deadBall = game6.deadBall + 1
+        }
+
+        if totalBallCount >= 61 && game7.gameTotal < 10 {
+            game7.deadBall = game7.deadBall + 1
+        }
+
+        if totalBallCount >= 71 && game8.gameTotal < 10 {
+            game8.deadBall = game8.deadBall + 1
+        }
+
+        if totalBallCount >= 81 && game9.gameTotal < 10 {
+            game9.deadBall = game9.deadBall + 1
+        }
+
+        if totalBallCount >= 91 && game10.gameTotal < 10 {
+            game10.deadBall = game10.deadBall + 1
+        }
+
+        if totalBallCount >= 101 && game11.gameTotal < 10 {
+            game11.deadBall = game11.deadBall + 1
+        }
+
+        if totalBallCount >= 111 && game12.gameTotal < 10 {
+            game12.deadBall = game12.deadBall + 1
+        }
+
+        if totalBallCount >= 121 && game13.gameTotal < 10 {
+            game13.deadBall = game13.deadBall + 1
+        }
+
+        if totalBallCount >= 131 && game14.gameTotal < 10 {
+            game14.deadBall = game14.deadBall + 1
+        }
+
+        if totalBallCount >= 141 && game15.gameTotal < 10 {
+            game15.deadBall = game15.deadBall + 1
+        }
+
+
+    }
 //
-//
-//    }
-//
-//    func deadBallBtnPressedMinus_value2() {
-//
-//
-//    }
+    func deadBallBtnPressedMinus_value2() {
+        
+        if totalBallCount >= 0 && totalBallCount < 10 {
+            game1.deadBall = game1.deadBall - 1
+        }
+
+        if totalBallCount >= 10 && totalBallCount < 20 {
+            game2.deadBall = game2.deadBall - 1
+        }
+
+        if totalBallCount >= 20 && totalBallCount < 30 {
+            game3.deadBall = game3.deadBall - 1
+        }
+
+        if totalBallCount >= 30 && totalBallCount < 40 {
+            game4.deadBall = game4.deadBall - 1
+        }
+
+        if totalBallCount >= 40 && totalBallCount < 50 {
+            game5.deadBall = game5.deadBall - 1
+        }
+
+        if totalBallCount >= 50 && totalBallCount < 60 {
+            game6.deadBall = game6.deadBall - 1
+        }
+
+        if totalBallCount >= 60 && totalBallCount < 70 {
+            game7.deadBall = game7.deadBall - 1
+        }
+
+        if totalBallCount >= 70 && totalBallCount < 80 {
+            game8.deadBall = game8.deadBall - 1
+        }
+
+        if totalBallCount >= 80 && totalBallCount < 90 {
+            game9.deadBall = game9.deadBall - 1
+        }
+
+        if totalBallCount >= 90 && totalBallCount < 100 {
+            game10.deadBall = game10.deadBall - 1
+        }
+
+        if totalBallCount >= 100 && totalBallCount < 110 {
+            game11.deadBall = game11.deadBall - 1
+        }
+
+        if totalBallCount >= 110 && totalBallCount < 120 {
+            game12.deadBall = game12.deadBall - 1
+        }
+
+        if totalBallCount >= 120 && totalBallCount < 130 {
+            game13.deadBall = game13.deadBall - 1
+        }
+
+        if totalBallCount >= 130 && totalBallCount < 140 {
+            game14.deadBall = game14.deadBall - 1
+        }
+
+        if totalBallCount >= 140 && totalBallCount < 150 {
+            game15.deadBall = game15.deadBall - 1
+        }
+
+
+
+    }
 
     
     
