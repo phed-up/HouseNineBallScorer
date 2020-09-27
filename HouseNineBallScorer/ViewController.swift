@@ -180,8 +180,18 @@ class ViewController: UIViewController {
     
     
     @IBAction func newGameBtnPressed(_ sender: UIButton) {
+         
+        showAlert()
         
-        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Are you sure you want to quit this game?", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in self.dismiss(animated: true, completion: nil)}))
+                        
+        present(alert, animated: true)
         
     }
     

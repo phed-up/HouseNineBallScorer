@@ -50,6 +50,8 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
         player1NameTextField.delegate = self
         player2NameTextField.delegate = self
         
+        
+        
     }
     
     let valueArray = ["3", "2"]
