@@ -1,3 +1,4 @@
+
 //
 //  selectorVCViewController.swift
 //  HouseNineBallScorer
@@ -8,8 +9,22 @@
 
 import UIKit
 
-class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
+    //Function to remove keyboard when touching outside the keyboard area
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //Function to remove keyboard using Return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        textField.resignFirstResponder()
+        return (true)
+
+    }
+    
+    //Picker View functions
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -32,14 +47,20 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
 
         valuePicker.dataSource = self
         valuePicker.delegate = self
+        player1NameTextField.delegate = self
+        player2NameTextField.delegate = self
         
     }
     
     let valueArray = ["3", "2"]
-    var nineballValueSelected = 2
+    var nineballValueSelected = 3
+
     
     var player1win = 0
     var player2win = 0
+    
+    @IBOutlet weak var player1NameTextField: UITextField!
+    @IBOutlet weak var player2NameTextField: UITextField!
     
     @IBOutlet weak var player1PointsNeeded: UILabel!
     @IBOutlet weak var player2PointsNeeded: UILabel!
@@ -77,7 +98,25 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! ViewController
         destinationVC.nineballValue = nineballValueSelected
+                
+        destinationVC.player1Name = player1NameTextField.text!
+        destinationVC.player2Name = player2NameTextField.text!
+        
+        destinationVC.player1PointsToWin = Int(player1PointsNeeded.text!)!
+        destinationVC.player2PointsToWin = Int(player2PointsNeeded.text!)!
+        
+        destinationVC.player1RemainderScore = Int(player1PointsNeeded.text!)!
+        destinationVC.player2RemainderScore = Int(player2PointsNeeded.text!)!
+
+        
+        
+        
         print(nineballValueSelected)
+        print(player1NameTextField.text!)
+        print(player2NameTextField.text!)
+        print(player1NameTextField.text!)
+        print(player2NameTextField.text!)
+        
         
     }
     

@@ -19,6 +19,11 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        player1NameLabel.text = player1Name
+        player2NameLabel.text = player2Name
+        player1RemainderScoreLabel.text = "\(player1RemainderScore)"
+        player2RemainderScoreLabel.text = "\(player2RemainderScore)"
+        
     }
     
     struct Game {
@@ -58,8 +63,20 @@ class ViewController: UIViewController {
     var player1Score = 0
     var player2Score = 0
     var deadBallScore = 0
+    
+    var player1Name = ""
+    var player2Name = ""
+    
+    var player1PointsToWin = 0
+    var player2PointsToWin = 0
+    
+    var player1RemainderScore = 0
+    var player2RemainderScore = 0
 
     
+    //Player Name Labels
+    @IBOutlet weak var player1NameLabel: UILabel!
+    @IBOutlet weak var player2NameLabel: UILabel!
     
     
     //Static Labels
@@ -72,6 +89,10 @@ class ViewController: UIViewController {
     //Player Score Labels
     @IBOutlet weak var player1ScoreLabel: UILabel!
     @IBOutlet weak var player2ScoreLabel: UILabel!
+    
+    @IBOutlet weak var player1RemainderScoreLabel: UILabel!
+    @IBOutlet weak var player2RemainderScoreLabel: UILabel!
+    
     
     @IBOutlet weak var totalBallCountLabel: UILabel!
     @IBOutlet weak var totalInningsLabel: UILabel!
