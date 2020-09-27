@@ -241,6 +241,8 @@ class ViewController: UIViewController {
             
             totalBallCount = totalBallCount + 1
             player1Score = player1Score + 1
+            player1RemainderScore = player1RemainderScore - 1
+            player1RemainderScoreLabel.text = "\(player1RemainderScore)"
             
             totals()
             
@@ -325,6 +327,8 @@ class ViewController: UIViewController {
             
             totalBallCount = totalBallCount - 1
             player1Score = player1Score - 1
+            player1RemainderScore = player1RemainderScore + 1
+            player1RemainderScoreLabel.text = "\(player1RemainderScore)"
             
             totals()
             
@@ -414,6 +418,8 @@ class ViewController: UIViewController {
             
         totalBallCount = totalBallCount + 1
         player2Score = player2Score + 1
+        player2RemainderScore = player2RemainderScore - 1
+        player2RemainderScoreLabel.text = "\(player2RemainderScore)"
         
         totals()
         
@@ -498,6 +504,8 @@ class ViewController: UIViewController {
             
             totalBallCount = totalBallCount - 1
             player2Score = player2Score - 1
+            player2RemainderScore = player2RemainderScore + 1
+            player2RemainderScoreLabel.text = "\(player2RemainderScore)"
             
             totals()
             
