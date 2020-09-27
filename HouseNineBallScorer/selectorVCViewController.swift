@@ -74,9 +74,6 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
         player1PointsNeeded.text = String(format: "%.0f", sender.value)
         player1win = Int(sender.value)
         
-       
-    
-
     }
     
     
