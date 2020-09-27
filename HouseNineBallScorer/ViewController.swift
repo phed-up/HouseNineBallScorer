@@ -186,8 +186,6 @@ class ViewController: UIViewController {
     }
     
 
-
-    
     @IBAction func switchPlayerBtnPressed(_ sender: UIButton) {
         
         if player1ID == 1 && player2ID == 2 {
