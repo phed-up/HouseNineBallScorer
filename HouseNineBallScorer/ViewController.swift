@@ -118,6 +118,28 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var winnerLabel: UILabel!
     
+    
+    //Games Labels
+    @IBOutlet weak var Gm1Label: UILabel!
+    @IBOutlet weak var Gm2Label: UILabel!
+    @IBOutlet weak var Gm3Label: UILabel!
+    @IBOutlet weak var Gm4Label: UILabel!
+    @IBOutlet weak var Gm5Label: UILabel!
+    @IBOutlet weak var Gm6Label: UILabel!
+    @IBOutlet weak var Gm7Label: UILabel!
+    @IBOutlet weak var Gm8Label: UILabel!
+    @IBOutlet weak var Gm9Label: UILabel!
+    @IBOutlet weak var Gm10Label: UILabel!
+    @IBOutlet weak var Gm11Label: UILabel!
+    @IBOutlet weak var Gm12Label: UILabel!
+    @IBOutlet weak var Gm13Label: UILabel!
+    @IBOutlet weak var Gm14Label: UILabel!
+    @IBOutlet weak var Gm15Label: UILabel!
+    
+    
+    
+    
+    
     //Player1 Game Board Score Labels
     @IBOutlet weak var gm1P1ScoreLabel: UILabel!
     @IBOutlet weak var gm2P1ScoreLabel: UILabel!
@@ -1089,6 +1111,8 @@ class ViewController: UIViewController {
     //player1BtnPressed
     
     func player1BtnPressedPlus_value3() {
+        
+        gameHighlights_value3()
 
         if game1.gameTotal >= 0 && game1.gameTotal < 11 {
             game1.playerA = game1.playerA + 1
@@ -1154,6 +1178,8 @@ class ViewController: UIViewController {
     }
 //
     func player1BtnPressedMinus_value3() {
+        
+        gameHighlights_value3()
 
         if totalBallCount >= 0 && totalBallCount < 11 {
             game1.playerA = game1.playerA - 1
@@ -1220,6 +1246,8 @@ class ViewController: UIViewController {
     }
 //
     func player1BtnPressedPlus_value2() {
+        
+        gameHighlights_value2()
 
         if game1.gameTotal >= 0 && game1.gameTotal < 10 {
             game1.playerA = game1.playerA + 1
@@ -1285,6 +1313,8 @@ class ViewController: UIViewController {
     }
 //
     func player1BtnPressedMinus_value2() {
+        
+        gameHighlights_value2()
 
         if totalBallCount >= 0 && totalBallCount < 10 {
             game1.playerA = game1.playerA - 1
@@ -1356,6 +1386,8 @@ class ViewController: UIViewController {
 //    //player2BtnPressed
 //
     func player2BtnPressedPlus_value3() {
+        
+        gameHighlights_value3()
 
         if game1.gameTotal >= 0 && game1.gameTotal < 11 {
             game1.playerB = game1.playerB + 1
@@ -1421,6 +1453,8 @@ class ViewController: UIViewController {
     }
 //
     func player2BtnPressedMinus_value3() {
+        
+        gameHighlights_value3()
 
         if totalBallCount >= 0 && totalBallCount < 11 {
             game1.playerB = game1.playerB - 1
@@ -1488,6 +1522,8 @@ class ViewController: UIViewController {
     }
 //
     func player2BtnPressedPlus_value2() {
+        
+        gameHighlights_value2()
 
         if game1.gameTotal >= 0 && game1.gameTotal < 10 {
             game1.playerB = game1.playerB + 1
@@ -1555,6 +1591,8 @@ class ViewController: UIViewController {
     }
 
     func player2BtnPressedMinus_value2() {
+        
+        gameHighlights_value2()
 
         if totalBallCount >= 0 && totalBallCount < 10 {
             game1.playerB = game1.playerB - 1
@@ -1624,6 +1662,8 @@ class ViewController: UIViewController {
 //    //deadBallsBtnPressed
 //
     func deadBallBtnPressedPlus_value3() {
+        
+        gameHighlights_value3()
 
         if game1.gameTotal >= 0 && game1.gameTotal < 11 {
             game1.deadBall = game1.deadBall + 1
@@ -1688,6 +1728,8 @@ class ViewController: UIViewController {
     }
 //
     func deadBallBtnPressedMinus_value3() {
+        
+        gameHighlights_value3()
         
         if totalBallCount >= 0 && totalBallCount < 11 {
             game1.deadBall = game1.deadBall - 1
@@ -1754,6 +1796,8 @@ class ViewController: UIViewController {
 //
     func deadBallBtnPressedPlus_value2() {
         
+        gameHighlights_value2()
+        
         if game1.gameTotal >= 0 && game1.gameTotal < 10 {
             game1.deadBall = game1.deadBall + 1
         }
@@ -1818,6 +1862,8 @@ class ViewController: UIViewController {
     }
 //
     func deadBallBtnPressedMinus_value2() {
+        
+        gameHighlights_value2()
         
         if totalBallCount >= 0 && totalBallCount < 10 {
             game1.deadBall = game1.deadBall - 1
@@ -1901,6 +1947,8 @@ class ViewController: UIViewController {
             
             winnerLabel.text = "\(player1Name) is the Winner!"
             
+            Gm1Label.backgroundColor = UIColor.gray
+            
             print("Player 1 Wins!")
         }
         
@@ -1922,9 +1970,201 @@ class ViewController: UIViewController {
             
             print("Player 2 Wins!")
         }
-        
-        
+                
     }
+    
+    
+    func gameHighlights_value3() {
+        
+        if totalBallCount >= 0 && totalBallCount <= 11 {
+            Gm1Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm1Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 12 && totalBallCount <= 22 {
+            Gm2Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm2Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 23 && totalBallCount <= 33 {
+            Gm3Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm3Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 34 && totalBallCount <= 44 {
+            Gm4Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm4Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 45 && totalBallCount <= 55 {
+            Gm5Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm5Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 56 && totalBallCount <= 66 {
+            Gm6Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm6Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 67 && totalBallCount <= 77 {
+            Gm7Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm7Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 78 && totalBallCount <= 88 {
+            Gm8Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm8Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 89 && totalBallCount <= 99 {
+            Gm9Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm9Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 100 && totalBallCount <= 110 {
+            Gm10Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm10Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 111 && totalBallCount <= 121 {
+            Gm11Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm11Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 122 && totalBallCount <= 132 {
+            Gm12Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm12Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 133 && totalBallCount <= 143 {
+            Gm13Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm13Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 144 && totalBallCount <= 154 {
+            Gm14Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm14Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 155 && totalBallCount <= 165 {
+            Gm15Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm15Label.backgroundColor = UIColor.clear
+        }
+
+    }
+    
+    func gameHighlights_value2() {
+        
+        if totalBallCount >= 0 && totalBallCount <= 10 {
+            Gm1Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm1Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 11 && totalBallCount <= 20 {
+            Gm2Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm2Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 21 && totalBallCount <= 30 {
+            Gm3Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm3Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 31 && totalBallCount <= 40 {
+            Gm4Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm4Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 41 && totalBallCount <= 50 {
+            Gm5Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm5Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 51 && totalBallCount <= 60 {
+            Gm6Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm6Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 61 && totalBallCount <= 70 {
+            Gm7Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm7Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 71 && totalBallCount <= 80 {
+            Gm8Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm8Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 81 && totalBallCount <= 90 {
+            Gm9Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm9Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 91 && totalBallCount <= 100 {
+            Gm10Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm10Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 101 && totalBallCount <= 110 {
+            Gm11Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm11Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 111 && totalBallCount <= 120 {
+            Gm12Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm12Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 121 && totalBallCount <= 130 {
+            Gm13Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm13Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 131 && totalBallCount <= 140 {
+            Gm14Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm14Label.backgroundColor = UIColor.clear
+        }
+        if totalBallCount >= 141 && totalBallCount <= 150 {
+            Gm15Label.backgroundColor = UIColor.lightGray
+        }
+        else {
+            Gm15Label.backgroundColor = UIColor.clear
+        }
+
+
+    }
+
 
     
     

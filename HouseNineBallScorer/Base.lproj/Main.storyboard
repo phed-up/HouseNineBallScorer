@@ -1068,7 +1068,7 @@
                                     <constraint firstAttribute="height" constant="50" id="3FD-kr-Y0P"/>
                                     <constraint firstAttribute="width" constant="80" id="Lh5-tL-Hz0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1191,7 +1191,7 @@
                                     <constraint firstAttribute="width" constant="80" id="kxs-bT-dV0"/>
                                     <constraint firstAttribute="height" constant="50" id="utm-oI-ZKF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1473,6 +1473,21 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Gm10Label" destination="oSv-WD-VHR" id="Gig-jU-LyX"/>
+                        <outlet property="Gm11Label" destination="q0B-6D-rSb" id="uOT-He-cWf"/>
+                        <outlet property="Gm12Label" destination="v7z-M8-LLe" id="wpa-yt-Kn4"/>
+                        <outlet property="Gm13Label" destination="wQl-cE-832" id="dN0-gF-RuG"/>
+                        <outlet property="Gm14Label" destination="I0d-E4-uWS" id="yRQ-ol-pj9"/>
+                        <outlet property="Gm15Label" destination="Kt5-sS-2x3" id="1WG-VT-mS6"/>
+                        <outlet property="Gm1Label" destination="9n3-Fb-ahx" id="Ms1-Uf-25G"/>
+                        <outlet property="Gm2Label" destination="oQd-EI-9WS" id="1GH-8P-hWP"/>
+                        <outlet property="Gm3Label" destination="3oV-Qy-sIz" id="vdb-tf-qfa"/>
+                        <outlet property="Gm4Label" destination="EXL-vf-Cx7" id="WCb-7z-UT1"/>
+                        <outlet property="Gm5Label" destination="Ood-5Q-QPy" id="H5C-8i-nJW"/>
+                        <outlet property="Gm6Label" destination="68b-qb-uQ4" id="Fw7-nm-4MN"/>
+                        <outlet property="Gm7Label" destination="doE-2e-Ud3" id="FyS-Go-VOl"/>
+                        <outlet property="Gm8Label" destination="LhI-qM-E6Y" id="ivB-ZA-rFM"/>
+                        <outlet property="Gm9Label" destination="y1c-Vp-dT3" id="00E-Kq-xWG"/>
                         <outlet property="deadBallLabel" destination="Mas-y1-m9n" id="wSN-Ao-kIl"/>
                         <outlet property="deadBallMinusBtn" destination="Ik2-cS-Jhj" id="AR4-Ec-r0O"/>
                         <outlet property="deadBallPlusBtn" destination="ibs-r7-cwR" id="tOa-eR-DNp"/>
