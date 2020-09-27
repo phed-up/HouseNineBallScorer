@@ -19,11 +19,15 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        winnerLabel.isHidden = true
+        
         player1NameLabel.text = player1Name
         player2NameLabel.text = player2Name
         player1RemainderScoreLabel.text = "\(player1RemainderScore)"
         player2RemainderScoreLabel.text = "\(player2RemainderScore)"
-        
+        player1PointsToWin = player1RemainderScore
+        player2PointsToWin = player2RemainderScore
     }
     
     struct Game {
@@ -83,6 +87,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var player1BallSunkLabel: UILabel!
     @IBOutlet weak var player2BallSunkLabel: UILabel!
+    @IBOutlet weak var deadBallLabel: UILabel!
     
     
     
@@ -106,7 +111,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftArrow: UIImageView!
     @IBOutlet weak var rightArrow: UIImageView!
     
-     
+    @IBOutlet weak var deadBallPlusBtn: UIButton!
+    @IBOutlet weak var deadBallMinusBtn: UIButton!
+    
+    @IBOutlet weak var switchPlayerBtn: UIButton!
+    
+    @IBOutlet weak var winnerLabel: UILabel!
     
     //Player1 Game Board Score Labels
     @IBOutlet weak var gm1P1ScoreLabel: UILabel!
@@ -260,6 +270,7 @@ class ViewController: UIViewController {
             player1RemainderScoreLabel.text = "\(player1RemainderScore)"
             
             totals()
+            
             
             if nineballValue == 2 {
                 player1BtnPressedPlus_value2()
@@ -422,7 +433,7 @@ class ViewController: UIViewController {
 
        
         updateScoreLabel()
-        
+        playerWins()
     
                    
     }
@@ -599,7 +610,7 @@ class ViewController: UIViewController {
 
        
         updateScoreLabel()
-        
+        playerWins()
         
     }
     
@@ -1868,8 +1879,51 @@ class ViewController: UIViewController {
             game15.deadBall = game15.deadBall - 1
         }
 
-
-
+    }
+    
+    func playerWins() {
+        
+        
+        if player1Score == player1PointsToWin && player2Score < player2PointsToWin {
+            
+            
+            player1Btn.isHidden = true
+            player1BtnMinus.isHidden = true
+            player2Btn.isHidden = true
+            player2BtnMinus.isHidden = true
+            deadBallPlusBtn.isHidden = true
+            deadBallMinusBtn.isHidden =  true
+            switchPlayerBtn.isHidden = true
+            deadBallLabel.isHidden = true
+            player1BallSunkLabel.isHidden = true
+            player2BallSunkLabel.isHidden = true
+            winnerLabel.isHidden = false
+            
+            winnerLabel.text = "\(player1Name) is the Winner!"
+            
+            print("Player 1 Wins!")
+        }
+        
+        if player2Score == player2PointsToWin && player1Score < player1PointsToWin {
+            
+            player1Btn.isHidden = true
+            player1BtnMinus.isHidden = true
+            player2Btn.isHidden = true
+            player2BtnMinus.isHidden = true
+            deadBallPlusBtn.isHidden = true
+            deadBallMinusBtn.isHidden =  true
+            switchPlayerBtn.isHidden = true
+            deadBallLabel.isHidden = true
+            player1BallSunkLabel.isHidden = true
+            player2BallSunkLabel.isHidden = true
+            winnerLabel.isHidden = false
+            
+            winnerLabel.text = "\(player2Name) is the Winner!"
+            
+            print("Player 2 Wins!")
+        }
+        
+        
     }
 
     

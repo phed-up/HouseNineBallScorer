@@ -1378,15 +1378,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8P-1h-d15">
-                                <rect key="frame" x="20" y="345" width="50" height="25"/>
+                                <rect key="frame" x="20" y="345" width="100" height="25"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="5XO-rd-5eJ"/>
-                                    <constraint firstAttribute="width" constant="50" id="aM0-yC-e9c"/>
+                                    <constraint firstAttribute="width" constant="100" id="aM0-yC-e9c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                <state key="normal" title="Reset"/>
+                                <state key="normal" title="New Game"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="10"/>
@@ -1396,6 +1396,16 @@
                                     <action selector="newGameBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPC-b2-fwI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="mVB-g5-b6b">
+                                <rect key="frame" x="33.5" y="207" width="600" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="QtG-p4-Teg"/>
+                                    <constraint firstAttribute="height" constant="70" id="nmX-jR-LJK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1414,6 +1424,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y8P-1h-d15" secondAttribute="bottom" constant="5" id="BNE-iE-srF"/>
                             <constraint firstAttribute="trailing" secondItem="owp-hg-1Dh" secondAttribute="trailing" constant="20" id="BdN-7D-Pnb"/>
                             <constraint firstItem="BsQ-Ul-zDW" firstAttribute="centerX" secondItem="99d-Lb-k1i" secondAttribute="centerX" id="BkW-VE-O4f"/>
+                            <constraint firstItem="mVB-g5-b6b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CWC-fJ-7sc"/>
                             <constraint firstItem="GzA-ws-qeE" firstAttribute="centerX" secondItem="8oM-GG-o28" secondAttribute="centerX" id="Cei-Ld-df2"/>
                             <constraint firstItem="zgq-2K-V8t" firstAttribute="leading" secondItem="9BJ-Wd-aUt" secondAttribute="trailing" constant="1.5" id="Cy0-j6-v2t"/>
                             <constraint firstItem="Eub-QT-CzE" firstAttribute="centerX" secondItem="zDT-bK-A4N" secondAttribute="centerX" id="Ek4-lf-AR8"/>
@@ -1441,6 +1452,7 @@
                             <constraint firstItem="Zpv-ff-BRm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d84-7h-BgB"/>
                             <constraint firstItem="9BJ-Wd-aUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dqd-ZY-n7t"/>
                             <constraint firstItem="8oM-GG-o28" firstAttribute="centerX" secondItem="99d-Lb-k1i" secondAttribute="centerX" id="dw7-WR-Xfm"/>
+                            <constraint firstItem="mVB-g5-b6b" firstAttribute="centerY" secondItem="ibs-r7-cwR" secondAttribute="centerY" id="f2m-o5-Z0Q"/>
                             <constraint firstItem="zDT-bK-A4N" firstAttribute="baseline" secondItem="99d-Lb-k1i" secondAttribute="baseline" id="fI8-8f-kS6"/>
                             <constraint firstItem="sNS-Vv-09D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="gxn-BF-MMm"/>
                             <constraint firstItem="9BJ-Wd-aUt" firstAttribute="top" secondItem="Zpv-ff-BRm" secondAttribute="bottom" constant="20" id="hFl-wX-8g2"/>
@@ -1461,6 +1473,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="deadBallLabel" destination="Mas-y1-m9n" id="wSN-Ao-kIl"/>
+                        <outlet property="deadBallMinusBtn" destination="Ik2-cS-Jhj" id="AR4-Ec-r0O"/>
+                        <outlet property="deadBallPlusBtn" destination="ibs-r7-cwR" id="tOa-eR-DNp"/>
                         <outlet property="gm10DBScoreLabel" destination="4Cg-GU-YuD" id="Zrc-Ia-tvk"/>
                         <outlet property="gm10InningLabel" destination="s2P-sd-sHy" id="M0m-Ri-LmI"/>
                         <outlet property="gm10P1ScoreLabel" destination="x2T-gs-K8e" id="cvm-uW-0C8"/>
@@ -1524,7 +1539,7 @@
                         <outlet property="leftArrow" destination="8us-YK-qn9" id="JQO-Sb-IoE"/>
                         <outlet property="player1BallSunkLabel" destination="UJB-eZ-Uev" id="6I6-dz-aYd"/>
                         <outlet property="player1Btn" destination="Lng-kI-IMb" id="azz-D3-vnw"/>
-                        <outlet property="player1BtnMinus" destination="Eub-QT-CzE" id="mcq-Rq-2ye"/>
+                        <outlet property="player1BtnMinus" destination="Eub-QT-CzE" id="O0K-CS-XDh"/>
                         <outlet property="player1NameLabel" destination="7XF-lK-hf7" id="8EQ-zB-WmO"/>
                         <outlet property="player1RemainderScoreLabel" destination="E9B-V6-hEk" id="FEo-Vt-fTn"/>
                         <outlet property="player1ScoreLabel" destination="zDT-bK-A4N" id="EHg-Wb-BrX"/>
@@ -1535,9 +1550,11 @@
                         <outlet property="player2RemainderScoreLabel" destination="Z5b-Gn-vDC" id="9zk-kz-ZX7"/>
                         <outlet property="player2ScoreLabel" destination="99d-Lb-k1i" id="vwW-b3-Yxl"/>
                         <outlet property="rightArrow" destination="zgq-2K-V8t" id="Td5-y5-2Fk"/>
+                        <outlet property="switchPlayerBtn" destination="9BJ-Wd-aUt" id="2bw-N0-DEY"/>
                         <outlet property="totalBallCountLabel" destination="AJL-90-VNJ" id="2WH-3n-WX8"/>
                         <outlet property="totalDeadBallLabel" destination="W3y-q0-8Pk" id="6Qt-J9-mri"/>
                         <outlet property="totalInningsLabel" destination="i8c-ET-6be" id="86a-NN-8sQ"/>
+                        <outlet property="winnerLabel" destination="mVB-g5-b6b" id="PUX-Vo-onC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
