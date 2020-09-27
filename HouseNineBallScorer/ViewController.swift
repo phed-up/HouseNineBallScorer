@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         player2Btn.isHidden = true
         player2BtnMinus.isHidden = true
         player2BallSunkLabel.isHidden = true
+        rightArrow.isHidden = true
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -76,11 +77,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalInningsLabel: UILabel!
     @IBOutlet weak var totalDeadBallLabel: UILabel!
     
+    //Buttons and Images
     @IBOutlet weak var player1Btn: UIButton!
     @IBOutlet weak var player1BtnMinus: UIButton!
     @IBOutlet weak var player2Btn: UIButton!
     @IBOutlet weak var player2BtnMinus: UIButton!
-   
+    @IBOutlet weak var leftArrow: UIImageView!
+    @IBOutlet weak var rightArrow: UIImageView!
+    
     
     
     
@@ -163,10 +167,12 @@ class ViewController: UIViewController {
             player2Btn.isHidden = false
             player2BtnMinus.isHidden = false
             player2BallSunkLabel.isHidden = false
+            rightArrow.isHidden = false
             
             player1Btn.isHidden = true
             player1BtnMinus.isHidden = true
             player1BallSunkLabel.isHidden = true
+            leftArrow.isHidden = true
             
             player1ID = 2
             player2ID = 1
@@ -178,10 +184,12 @@ class ViewController: UIViewController {
             player2Btn.isHidden = true
             player2BtnMinus.isHidden = true
             player2BallSunkLabel.isHidden = true
+            rightArrow.isHidden = true
             
             player1Btn.isHidden = false
             player1BtnMinus.isHidden = false
             player1BallSunkLabel.isHidden = false
+            leftArrow.isHidden = false
             
             player1ID = 1
             player2ID = 2
