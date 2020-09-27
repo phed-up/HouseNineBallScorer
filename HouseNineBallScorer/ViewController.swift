@@ -106,8 +106,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftArrow: UIImageView!
     @IBOutlet weak var rightArrow: UIImageView!
     
-    
-    
+     
     
     //Player1 Game Board Score Labels
     @IBOutlet weak var gm1P1ScoreLabel: UILabel!
@@ -178,6 +177,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var gm13InningLabel: UILabel!
     @IBOutlet weak var gm14InningLabel: UILabel!
     @IBOutlet weak var gm15InningLabel: UILabel!
+    
+    
+    @IBAction func newGameBtnPressed(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
 
 
     
