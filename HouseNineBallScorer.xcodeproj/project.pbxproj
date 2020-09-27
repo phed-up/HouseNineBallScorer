@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05F7C272520471D00523A2E /* selectorVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F7C262520471D00523A2E /* selectorVCViewController.swift */; };
 		D0F61968250573A500689688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F61967250573A500689688 /* AppDelegate.swift */; };
 		D0F6196A250573A500689688 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F61969250573A500689688 /* SceneDelegate.swift */; };
 		D0F6196C250573A500689688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6196B250573A500689688 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D05F7C262520471D00523A2E /* selectorVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectorVCViewController.swift; sourceTree = "<group>"; };
 		D0F61964250573A500689688 /* HouseNineBallScorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseNineBallScorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F61967250573A500689688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F61969250573A500689688 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				D0F61970250573A600689688 /* Assets.xcassets */,
 				D0F61972250573A600689688 /* LaunchScreen.storyboard */,
 				D0F61975250573A600689688 /* Info.plist */,
+				D05F7C262520471D00523A2E /* selectorVCViewController.swift */,
 			);
 			path = HouseNineBallScorer;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				D0F6196C250573A500689688 /* ViewController.swift in Sources */,
 				D0F61968250573A500689688 /* AppDelegate.swift in Sources */,
+				D05F7C272520471D00523A2E /* selectorVCViewController.swift in Sources */,
 				D0F6196A250573A500689688 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
