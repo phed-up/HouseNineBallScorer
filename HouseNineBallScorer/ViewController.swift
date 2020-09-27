@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         
         player2Btn.isHidden = true
         player2BtnMinus.isHidden = true
+        player2BallSunkLabel.isHidden = true
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -46,7 +47,7 @@ class ViewController: UIViewController {
     var game14 = Game(playerA: 0, playerB: 0, deadBall: 0, gameTotal: 0, innings: 0)
     var game15 = Game(playerA: 0, playerB: 0, deadBall: 0, gameTotal: 0, innings: 0)
     
-    var nineballValue = 2
+    var nineballValue = 3
     var totalBallCount = 0
         
     var innings = 0
@@ -61,6 +62,10 @@ class ViewController: UIViewController {
     
     
     //Static Labels
+    
+    @IBOutlet weak var player1BallSunkLabel: UILabel!
+    @IBOutlet weak var player2BallSunkLabel: UILabel!
+    
     
     
     //Player Score Labels
@@ -157,9 +162,11 @@ class ViewController: UIViewController {
             
             player2Btn.isHidden = false
             player2BtnMinus.isHidden = false
+            player2BallSunkLabel.isHidden = false
             
             player1Btn.isHidden = true
             player1BtnMinus.isHidden = true
+            player1BallSunkLabel.isHidden = true
             
             player1ID = 2
             player2ID = 1
@@ -170,9 +177,11 @@ class ViewController: UIViewController {
             
             player2Btn.isHidden = true
             player2BtnMinus.isHidden = true
+            player2BallSunkLabel.isHidden = true
             
             player1Btn.isHidden = false
             player1BtnMinus.isHidden = false
+            player1BallSunkLabel.isHidden = false
             
             player1ID = 1
             player2ID = 2
