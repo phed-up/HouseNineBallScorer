@@ -1998,91 +1998,91 @@ class ViewController: UIViewController {
     
     func gameHighlights_value3() {
         
-        if totalBallCount >= 0 && totalBallCount <= 11 {
+        if totalBallCount >= 0 && totalBallCount <= 10 {
             Gm1Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm1Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 12 && totalBallCount <= 22 {
+        if totalBallCount >= 11 && totalBallCount <= 21 {
             Gm2Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm2Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 23 && totalBallCount <= 33 {
+        if totalBallCount >= 22 && totalBallCount <= 32 {
             Gm3Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm3Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 34 && totalBallCount <= 44 {
+        if totalBallCount >= 33 && totalBallCount <= 43 {
             Gm4Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm4Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 45 && totalBallCount <= 55 {
+        if totalBallCount >= 44 && totalBallCount <= 54 {
             Gm5Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm5Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 56 && totalBallCount <= 66 {
+        if totalBallCount >= 55 && totalBallCount <= 65 {
             Gm6Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm6Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 67 && totalBallCount <= 77 {
+        if totalBallCount >= 66 && totalBallCount <= 76 {
             Gm7Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm7Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 78 && totalBallCount <= 88 {
+        if totalBallCount >= 77 && totalBallCount <= 87 {
             Gm8Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm8Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 89 && totalBallCount <= 99 {
+        if totalBallCount >= 88 && totalBallCount <= 98 {
             Gm9Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm9Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 100 && totalBallCount <= 110 {
+        if totalBallCount >= 99 && totalBallCount <= 109 {
             Gm10Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm10Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 111 && totalBallCount <= 121 {
+        if totalBallCount >= 110 && totalBallCount <= 120 {
             Gm11Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm11Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 122 && totalBallCount <= 132 {
+        if totalBallCount >= 121 && totalBallCount <= 131 {
             Gm12Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm12Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 133 && totalBallCount <= 143 {
+        if totalBallCount >= 132 && totalBallCount <= 142 {
             Gm13Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm13Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 144 && totalBallCount <= 154 {
+        if totalBallCount >= 143 && totalBallCount <= 153 {
             Gm14Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm14Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 155 && totalBallCount <= 165 {
+        if totalBallCount >= 154 && totalBallCount <= 164 {
             Gm15Label.backgroundColor = UIColor.lightGray
         }
         else {
@@ -2093,91 +2093,91 @@ class ViewController: UIViewController {
     
     func gameHighlights_value2() {
         
-        if totalBallCount >= 0 && totalBallCount <= 10 {
+        if totalBallCount >= 0 && totalBallCount <= 9 {
             Gm1Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm1Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 11 && totalBallCount <= 20 {
+        if totalBallCount >= 10 && totalBallCount <= 19 {
             Gm2Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm2Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 21 && totalBallCount <= 30 {
+        if totalBallCount >= 20 && totalBallCount <= 29 {
             Gm3Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm3Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 31 && totalBallCount <= 40 {
+        if totalBallCount >= 30 && totalBallCount <= 39 {
             Gm4Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm4Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 41 && totalBallCount <= 50 {
+        if totalBallCount >= 40 && totalBallCount <= 49 {
             Gm5Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm5Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 51 && totalBallCount <= 60 {
+        if totalBallCount >= 50 && totalBallCount <= 59 {
             Gm6Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm6Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 61 && totalBallCount <= 70 {
+        if totalBallCount >= 60 && totalBallCount <= 69 {
             Gm7Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm7Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 71 && totalBallCount <= 80 {
+        if totalBallCount >= 70 && totalBallCount <= 79 {
             Gm8Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm8Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 81 && totalBallCount <= 90 {
+        if totalBallCount >= 80 && totalBallCount <= 89 {
             Gm9Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm9Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 91 && totalBallCount <= 100 {
+        if totalBallCount >= 90 && totalBallCount <= 99 {
             Gm10Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm10Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 101 && totalBallCount <= 110 {
+        if totalBallCount >= 100 && totalBallCount <= 109 {
             Gm11Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm11Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 111 && totalBallCount <= 120 {
+        if totalBallCount >= 110 && totalBallCount <= 119 {
             Gm12Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm12Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 121 && totalBallCount <= 130 {
+        if totalBallCount >= 120 && totalBallCount <= 129 {
             Gm13Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm13Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 131 && totalBallCount <= 140 {
+        if totalBallCount >= 130 && totalBallCount <= 139 {
             Gm14Label.backgroundColor = UIColor.lightGray
         }
         else {
             Gm14Label.backgroundColor = UIColor.clear
         }
-        if totalBallCount >= 141 && totalBallCount <= 150 {
+        if totalBallCount >= 140 && totalBallCount <= 149 {
             Gm15Label.backgroundColor = UIColor.lightGray
         }
         else {
