@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         player2RemainderScoreLabel.text = "\(player2RemainderScore)"
         player1PointsToWin = player1RemainderScore
         player2PointsToWin = player2RemainderScore
+        nineBallWorthLabel.text = "9 ball worth \(nineballValue) points"
     }
     
     struct Game {
@@ -97,6 +98,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var player1RemainderScoreLabel: UILabel!
     @IBOutlet weak var player2RemainderScoreLabel: UILabel!
+    
+    @IBOutlet weak var nineBallWorthLabel: UILabel!
     
     
     @IBOutlet weak var totalBallCountLabel: UILabel!

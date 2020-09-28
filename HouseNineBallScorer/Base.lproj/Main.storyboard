@@ -1294,10 +1294,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yMl-Ye-OHl" userLabel="TotalBallCount">
                                 <rect key="frame" x="288.5" y="351" width="103" height="14"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Ball Count:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cU-4m-K52">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Ball Count:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5Z-KX-OL8">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="14"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="14" id="Kq3-gc-rIw"/>
+                                            <constraint firstAttribute="height" constant="14" id="PaN-KX-UR0"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
                                         <nil key="textColor"/>
@@ -1406,6 +1406,17 @@
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 ball worth 3 points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cU-4m-K52">
+                                <rect key="frame" x="155" y="351" width="100" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Kq3-gc-rIw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="jK7-T2-3cg"/>
+                                    <constraint firstAttribute="width" constant="100" id="rjd-Pl-f4Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1459,6 +1470,7 @@
                             <constraint firstItem="zDT-bK-A4N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="jFc-cm-V7z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="owp-hg-1Dh" secondAttribute="bottom" constant="35" id="jTQ-Mw-MoT"/>
                             <constraint firstItem="Eub-QT-CzE" firstAttribute="centerX" secondItem="Lng-kI-IMb" secondAttribute="centerX" id="ktZ-zp-ONl"/>
+                            <constraint firstItem="2cU-4m-K52" firstAttribute="leading" secondItem="Y8P-1h-d15" secondAttribute="trailing" constant="35" id="mNF-Qk-F47"/>
                             <constraint firstItem="Eub-QT-CzE" firstAttribute="centerY" secondItem="Ik2-cS-Jhj" secondAttribute="centerY" id="msB-Rz-6OX"/>
                             <constraint firstItem="99d-Lb-k1i" firstAttribute="leading" secondItem="Z5b-Gn-vDC" secondAttribute="trailing" id="nOV-hr-g3i"/>
                             <constraint firstItem="yMl-Ye-OHl" firstAttribute="centerY" secondItem="WWw-ZS-IaT" secondAttribute="centerY" id="nWY-IY-MVn"/>
@@ -1467,6 +1479,7 @@
                             <constraint firstItem="Ik2-cS-Jhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4d-qk-uaw"/>
                             <constraint firstItem="Z5b-Gn-vDC" firstAttribute="centerY" secondItem="99d-Lb-k1i" secondAttribute="centerY" id="uZ4-jX-Q7P"/>
                             <constraint firstItem="Zpv-ff-BRm" firstAttribute="top" secondItem="sNS-Vv-09D" secondAttribute="bottom" constant="10" id="v5W-JG-yA8"/>
+                            <constraint firstItem="2cU-4m-K52" firstAttribute="centerY" secondItem="D5Z-KX-OL8" secondAttribute="centerY" id="vts-ze-ida"/>
                             <constraint firstItem="zDT-bK-A4N" firstAttribute="top" secondItem="sNS-Vv-09D" secondAttribute="bottom" constant="42" id="whg-2t-dDe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iMU-07-Dco" secondAttribute="trailing" constant="30" id="ybY-LJ-MBI"/>
                             <constraint firstItem="Mas-y1-m9n" firstAttribute="centerX" secondItem="ibs-r7-cwR" secondAttribute="centerX" id="yyt-dr-ZTq"/>
@@ -1552,6 +1565,7 @@
                         <outlet property="gm9P1ScoreLabel" destination="IJX-0e-Zkg" id="O8c-HP-pFT"/>
                         <outlet property="gm9P2ScoreLabel" destination="Sda-Ub-x37" id="VRT-IQ-DFX"/>
                         <outlet property="leftArrow" destination="8us-YK-qn9" id="JQO-Sb-IoE"/>
+                        <outlet property="nineBallWorthLabel" destination="2cU-4m-K52" id="dWD-7I-gAK"/>
                         <outlet property="player1BallSunkLabel" destination="UJB-eZ-Uev" id="6I6-dz-aYd"/>
                         <outlet property="player1Btn" destination="Lng-kI-IMb" id="azz-D3-vnw"/>
                         <outlet property="player1BtnMinus" destination="Eub-QT-CzE" id="O0K-CS-XDh"/>
