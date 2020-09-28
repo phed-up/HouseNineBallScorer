@@ -36,6 +36,7 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         nineballValueSelected = Int(valueArray[row])!
+        valueSelectedLabel.text = "\(nineballValueSelected)"
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -71,6 +72,7 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     
     @IBOutlet weak var valuePicker: UIPickerView!
+    @IBOutlet weak var valueSelectedLabel: UILabel!
     
     @IBAction func player1Slider(_ sender: UISlider) {
         
