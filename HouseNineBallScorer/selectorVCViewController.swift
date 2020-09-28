@@ -91,9 +91,34 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     @IBAction func startBtnPressed(_ sender: UIButton) {
         
+        if player1PointsNeeded.text == "00" {
+            showAlertforStart()
+          
+        }
+    
+        if player2PointsNeeded.text == "00" {
+            showAlertforStart()
+            
+        }
+      
+        else {
         performSegue(withIdentifier: "goToGame", sender: self)
-        
+        }
+                
     }
+    
+    
+    func showAlertforStart() {
+        
+        let alert = UIAlertController(title: "Alert", message: "Please enter a score from the slider for both players", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "ok", style: .cancel))
+
+        present(alert, animated: true)
+            
+    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! ViewController
@@ -109,13 +134,9 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
         destinationVC.player2RemainderScore = Int(player2PointsNeeded.text!)!
 
         
+        print(player1PointsNeeded.text!)
         
         
-        print(nineballValueSelected)
-        print(player1NameTextField.text!)
-        print(player2NameTextField.text!)
-        print(player1NameTextField.text!)
-        print(player2NameTextField.text!)
         
         
     }
