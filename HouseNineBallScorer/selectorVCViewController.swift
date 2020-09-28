@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     

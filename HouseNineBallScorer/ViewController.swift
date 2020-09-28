@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -77,7 +78,25 @@ class ViewController: UIViewController {
     
     var player1RemainderScore = 0
     var player2RemainderScore = 0
-
+    
+    @IBAction func player2SpeechBtn(_ sender: UIButton) {
+        let voice = AVSpeechSynthesisVoice(language: "en-au")
+        let toSay = AVSpeechUtterance(string: "\(player2Name) needs \(player2RemainderScore) more points")
+        toSay.voice = voice
+        let spk = AVSpeechSynthesizer()
+        spk.speak(toSay)
+    }
+    
+    
+    @IBAction func player1SpeechBtn(_ sender: UIButton) {
+        
+        let voice = AVSpeechSynthesisVoice(language: "en-au")
+        let toSay = AVSpeechUtterance(string: "\(player1Name) needs \(player1RemainderScore) more points")
+        toSay.voice = voice
+        let spk = AVSpeechSynthesizer()
+        spk.speak(toSay)
+    }
+    
     
     //Player Name Labels
     @IBOutlet weak var player1NameLabel: UILabel!
