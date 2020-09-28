@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         player2RemainderScoreLabel.text = "\(player2RemainderScore)"
         player1PointsToWin = player1RemainderScore
         player2PointsToWin = player2RemainderScore
-        nineBallWorthLabel.text = "9 ball worth \(nineballValue) points"
+        nineBallWorthLabel.text = "9ball value = \(nineballValue)"
     }
     
     struct Game {
