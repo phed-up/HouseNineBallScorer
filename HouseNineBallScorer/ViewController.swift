@@ -286,6 +286,7 @@ class ViewController: UIViewController {
             
             innings = innings + 1
             totalInningsLabel.text = "\(innings)"
+            playSound(soundFileName: "Pop")
             
             if nineballValue == 3 {
             updateInnings_value3()
@@ -307,6 +308,8 @@ class ViewController: UIViewController {
        
         
         if sender.currentTitle == "+" {
+            
+            playSound(soundFileName: "ballSunk")
             
             totalBallCount = totalBallCount + 1
             player1Score = player1Score + 1
@@ -484,7 +487,11 @@ class ViewController: UIViewController {
         
     @IBAction func player2BtnPressed(_ sender: UIButton) {
         
+        
+        
        if sender.currentTitle == "+" {
+        
+        playSound(soundFileName: "ballSunk")
             
         totalBallCount = totalBallCount + 1
         player2Score = player2Score + 1
@@ -661,6 +668,8 @@ class ViewController: UIViewController {
     @IBAction func deadBallBtnPressed(_ sender: UIButton) {
         
         if sender.currentTitle == "+" {
+            
+            playSound(soundFileName: "Morse")
              
             totalBallCount = totalBallCount + 1
             deadBallScore = deadBallScore + 1
@@ -1952,6 +1961,7 @@ class ViewController: UIViewController {
     func playerWins() {
         
         
+        
         if player1Score == player1PointsToWin && player2Score < player2PointsToWin {
             
             
@@ -1969,10 +1979,12 @@ class ViewController: UIViewController {
             
             winnerLabel.text = "\(player1Name) is the Winner!"
             
-            Gm1Label.backgroundColor = UIColor.gray
+            playSound(soundFileName: "Applause")
+            
             
             print("Player 1 Wins!")
         }
+        
         
         if player2Score == player2PointsToWin && player1Score < player1PointsToWin {
             
@@ -1989,6 +2001,8 @@ class ViewController: UIViewController {
             winnerLabel.isHidden = false
             
             winnerLabel.text = "\(player2Name) is the Winner!"
+            
+            playSound(soundFileName: "Applause")
             
             print("Player 2 Wins!")
         }
@@ -2185,6 +2199,18 @@ class ViewController: UIViewController {
         }
 
 
+    }
+    
+    func playSound(soundFileName: String)
+    {
+        if let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: "wav")
+            
+        {
+            var mySound: SystemSoundID = 0
+            AudioServicesCreateSystemSoundID(soundURL as CFURL, &mySound)
+            // Play
+            AudioServicesPlaySystemSound(mySound);
+        }
     }
 
 

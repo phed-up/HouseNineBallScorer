@@ -37,11 +37,14 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         nineballValueSelected = Int(valueArray[row])!
         valueSelectedLabel.text = "\(nineballValueSelected)"
+    
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return valueArray[row]
     }
+    
+    
     
 
     override func viewDidLoad() {
@@ -52,9 +55,11 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
         player1NameTextField.delegate = self
         player2NameTextField.delegate = self
         
-        
-        
+      
     }
+    
+    
+    
     
     let valueArray = ["3", "2"]
     var nineballValueSelected = 3
@@ -82,6 +87,10 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     }
     
     
+   
+    
+    
+    
     
     
     @IBAction func player2Slider(_ sender: UISlider) {
@@ -95,18 +104,35 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
         
         if player1PointsNeeded.text == "00" {
             showAlertforStart()
+            
           
         }
     
         if player2PointsNeeded.text == "00" {
             showAlertforStart()
+           
             
         }
       
         else {
         performSegue(withIdentifier: "goToGame", sender: self)
+            playSound(soundFileName: "sound1")
         }
+        
+        
                 
+    }
+    
+    func playSound(soundFileName: String)
+    {
+        if let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: "wav")
+            
+        {
+            var mySound: SystemSoundID = 0
+            AudioServicesCreateSystemSoundID(soundURL as CFURL, &mySound)
+            // Play
+            AudioServicesPlaySystemSound(mySound);
+        }
     }
     
     
@@ -117,6 +143,9 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
         alert.addAction(UIAlertAction(title: "ok", style: .cancel))
 
         present(alert, animated: true)
+        
+        playSound(soundFileName: "Ping")
+       
             
     }
     

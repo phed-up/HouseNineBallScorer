@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D05F7C272520471D00523A2E /* selectorVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F7C262520471D00523A2E /* selectorVCViewController.swift */; };
+		D0EEE1C22523C38E00E6AB04 /* sound1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1B92523C38D00E6AB04 /* sound1.wav */; };
+		D0EEE1C32523C38E00E6AB04 /* payment_success.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1BA2523C38D00E6AB04 /* payment_success.wav */; };
+		D0EEE1C42523C38E00E6AB04 /* Ping.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1BB2523C38E00E6AB04 /* Ping.wav */; };
+		D0EEE1C52523C38E00E6AB04 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1BC2523C38E00E6AB04 /* Click.mp3 */; };
+		D0EEE1C62523C38E00E6AB04 /* Tink.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1BD2523C38E00E6AB04 /* Tink.wav */; };
+		D0EEE1C72523C38E00E6AB04 /* Basso.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1BE2523C38E00E6AB04 /* Basso.wav */; };
+		D0EEE1C82523C38E00E6AB04 /* Applause.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1BF2523C38E00E6AB04 /* Applause.wav */; };
+		D0EEE1C92523C38E00E6AB04 /* Pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1C02523C38E00E6AB04 /* Pop.wav */; };
+		D0EEE1CA2523C38E00E6AB04 /* ballSunk.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1C12523C38E00E6AB04 /* ballSunk.wav */; };
+		D0EEE1CD2523C54F00E6AB04 /* Morse.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0EEE1CC2523C54F00E6AB04 /* Morse.wav */; };
 		D0F61968250573A500689688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F61967250573A500689688 /* AppDelegate.swift */; };
 		D0F6196A250573A500689688 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F61969250573A500689688 /* SceneDelegate.swift */; };
 		D0F6196C250573A500689688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6196B250573A500689688 /* ViewController.swift */; };
@@ -18,6 +28,16 @@
 
 /* Begin PBXFileReference section */
 		D05F7C262520471D00523A2E /* selectorVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectorVCViewController.swift; sourceTree = "<group>"; };
+		D0EEE1B92523C38D00E6AB04 /* sound1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound1.wav; sourceTree = "<group>"; };
+		D0EEE1BA2523C38D00E6AB04 /* payment_success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = payment_success.wav; sourceTree = "<group>"; };
+		D0EEE1BB2523C38E00E6AB04 /* Ping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ping.wav; sourceTree = "<group>"; };
+		D0EEE1BC2523C38E00E6AB04 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
+		D0EEE1BD2523C38E00E6AB04 /* Tink.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tink.wav; sourceTree = "<group>"; };
+		D0EEE1BE2523C38E00E6AB04 /* Basso.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Basso.wav; sourceTree = "<group>"; };
+		D0EEE1BF2523C38E00E6AB04 /* Applause.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Applause.wav; sourceTree = "<group>"; };
+		D0EEE1C02523C38E00E6AB04 /* Pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pop.wav; sourceTree = "<group>"; };
+		D0EEE1C12523C38E00E6AB04 /* ballSunk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ballSunk.wav; sourceTree = "<group>"; };
+		D0EEE1CC2523C54F00E6AB04 /* Morse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Morse.wav; sourceTree = "<group>"; };
 		D0F61964250573A500689688 /* HouseNineBallScorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseNineBallScorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F61967250573A500689688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F61969250573A500689688 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0EEE1A22523BC4500E6AB04 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D0EEE1CC2523C54F00E6AB04 /* Morse.wav */,
+				D0EEE1BF2523C38E00E6AB04 /* Applause.wav */,
+				D0EEE1C12523C38E00E6AB04 /* ballSunk.wav */,
+				D0EEE1BE2523C38E00E6AB04 /* Basso.wav */,
+				D0EEE1BC2523C38E00E6AB04 /* Click.mp3 */,
+				D0EEE1BA2523C38D00E6AB04 /* payment_success.wav */,
+				D0EEE1BB2523C38E00E6AB04 /* Ping.wav */,
+				D0EEE1C02523C38E00E6AB04 /* Pop.wav */,
+				D0EEE1B92523C38D00E6AB04 /* sound1.wav */,
+				D0EEE1BD2523C38E00E6AB04 /* Tink.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		D0F6195B250573A500689688 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +95,7 @@
 		D0F61966250573A500689688 /* HouseNineBallScorer */ = {
 			isa = PBXGroup;
 			children = (
+				D0EEE1A22523BC4500E6AB04 /* Sounds */,
 				D0F61967250573A500689688 /* AppDelegate.swift */,
 				D0F61969250573A500689688 /* SceneDelegate.swift */,
 				D0F6196B250573A500689688 /* ViewController.swift */,
@@ -128,9 +166,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EEE1CD2523C54F00E6AB04 /* Morse.wav in Resources */,
+				D0EEE1CA2523C38E00E6AB04 /* ballSunk.wav in Resources */,
+				D0EEE1C22523C38E00E6AB04 /* sound1.wav in Resources */,
 				D0F61974250573A600689688 /* LaunchScreen.storyboard in Resources */,
+				D0EEE1C62523C38E00E6AB04 /* Tink.wav in Resources */,
 				D0F61971250573A600689688 /* Assets.xcassets in Resources */,
+				D0EEE1C52523C38E00E6AB04 /* Click.mp3 in Resources */,
+				D0EEE1C82523C38E00E6AB04 /* Applause.wav in Resources */,
 				D0F6196F250573A500689688 /* Main.storyboard in Resources */,
+				D0EEE1C42523C38E00E6AB04 /* Ping.wav in Resources */,
+				D0EEE1C72523C38E00E6AB04 /* Basso.wav in Resources */,
+				D0EEE1C92523C38E00E6AB04 /* Pop.wav in Resources */,
+				D0EEE1C32523C38E00E6AB04 /* payment_success.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
