@@ -173,6 +173,7 @@
                         <outlet property="player1PointsNeeded" destination="SQb-pA-g3Y" id="JpC-Nz-UmX"/>
                         <outlet property="player2NameTextField" destination="jv6-c1-Wpj" id="1DD-pP-eii"/>
                         <outlet property="player2PointsNeeded" destination="8y0-Lr-bk7" id="BpB-7q-9k4"/>
+                        <outlet property="startBtn" destination="rpU-gs-ujH" id="XYO-HI-wH4"/>
                         <outlet property="valuePicker" destination="c7k-nt-jYC" id="FGY-Y1-usk"/>
                         <outlet property="valueSelectedLabel" destination="g9x-9m-xTI" id="IL5-Wy-ogZ"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToGame" id="ij6-GQ-gwD"/>

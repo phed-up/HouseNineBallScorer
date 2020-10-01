@@ -55,6 +55,7 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
         player1NameTextField.delegate = self
         player2NameTextField.delegate = self
         
+        
       
     }
     
@@ -74,6 +75,7 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     @IBOutlet weak var player1PointsNeeded: UILabel!
     @IBOutlet weak var player2PointsNeeded: UILabel!
     
+    @IBOutlet weak var startBtn: UIButton!
     
     
     @IBOutlet weak var valuePicker: UIPickerView!
