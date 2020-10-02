@@ -25,12 +25,22 @@ class ViewController: UIViewController {
         
         player1NameLabel.text = player1Name
         player2NameLabel.text = player2Name
+        player1GameLabel.text = player1Name
+        player2GameLabel.text = player2Name
         player1RemainderScoreLabel.text = "\(player1RemainderScore)"
         player2RemainderScoreLabel.text = "\(player2RemainderScore)"
         player1PointsToWin = player1RemainderScore
         player2PointsToWin = player2RemainderScore
         nineBallWorthLabel.text = "9ball value = \(nineballValue)"
     }
+    
+    //to prevent view from going into sleep mode
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        UIApplication.shared.isIdleTimerDisabled = true
+        return true
+    }
+    
+    
     
     struct Game {
         
@@ -96,6 +106,10 @@ class ViewController: UIViewController {
         let spk = AVSpeechSynthesizer()
         spk.speak(toSay)
     }
+    
+    @IBOutlet weak var player1GameLabel: UILabel!
+    @IBOutlet weak var player2GameLabel: UILabel!
+    
     
     
     //Player Name Labels

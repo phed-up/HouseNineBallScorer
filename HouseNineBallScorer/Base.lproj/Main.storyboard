@@ -1607,12 +1607,14 @@
                         <outlet property="player1BallSunkLabel" destination="UJB-eZ-Uev" id="6I6-dz-aYd"/>
                         <outlet property="player1Btn" destination="Lng-kI-IMb" id="azz-D3-vnw"/>
                         <outlet property="player1BtnMinus" destination="Eub-QT-CzE" id="O0K-CS-XDh"/>
+                        <outlet property="player1GameLabel" destination="fuQ-Lh-bOU" id="IQv-19-6vi"/>
                         <outlet property="player1NameLabel" destination="7XF-lK-hf7" id="8EQ-zB-WmO"/>
                         <outlet property="player1RemainderScoreLabel" destination="E9B-V6-hEk" id="FEo-Vt-fTn"/>
                         <outlet property="player1ScoreLabel" destination="zDT-bK-A4N" id="EHg-Wb-BrX"/>
                         <outlet property="player2BallSunkLabel" destination="GzA-ws-qeE" id="KxO-cd-hZg"/>
                         <outlet property="player2Btn" destination="8oM-GG-o28" id="BcO-Ll-URx"/>
                         <outlet property="player2BtnMinus" destination="ASJ-GS-bup" id="JXF-e4-03q"/>
+                        <outlet property="player2GameLabel" destination="BOL-NF-jRH" id="mz7-nQ-fFo"/>
                         <outlet property="player2NameLabel" destination="BsQ-Ul-zDW" id="USV-u9-XcB"/>
                         <outlet property="player2RemainderScoreLabel" destination="Z5b-Gn-vDC" id="9zk-kz-ZX7"/>
                         <outlet property="player2ScoreLabel" destination="99d-Lb-k1i" id="vwW-b3-Yxl"/>
