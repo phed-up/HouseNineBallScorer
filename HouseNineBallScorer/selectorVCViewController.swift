@@ -44,6 +44,12 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
         return valueArray[row]
     }
     
+    //share link pop-up
+    @IBAction func shareAppButtonPressed(_ sender: UIButton) {
+        
+        let share = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+              present(share, animated: true)
+    }
     
     
     
@@ -62,7 +68,7 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     }
     
     
-    
+    var url = "https://apps.apple.com/us/app/runnin-out/id1534262908"
     
     let valueArray = ["3", "2"]
     var nineballValueSelected = 3
