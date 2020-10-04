@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,37 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-12" translatesAutoresizingMaskIntoConstraints="NO" id="iTO-Ie-Ybv">
-                                <rect key="frame" x="112" y="108" width="443" height="159"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fed app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhE-8h-wEx">
-                                        <rect key="frame" x="48" y="0.0" width="347" height="105"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="347" id="Am6-1U-OLw"/>
-                                            <constraint firstAttribute="height" constant="105" id="bhu-ii-Fdm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="100"/>
-                                        <color key="textColor" systemColor="systemGreenColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="productions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-fq-wbE">
-                                        <rect key="frame" x="0.0" y="93" width="443" height="66"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="443" id="hcm-AO-7M4"/>
-                                            <constraint firstAttribute="height" constant="66" id="lVB-pl-AhU"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="60"/>
-                                        <color key="textColor" systemColor="systemGray4Color"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fed_appLogoFinal" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-Yr-5Ia">
+                                <rect key="frame" x="20" y="20" width="627" height="335"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iTO-Ie-Ybv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8Sa-Wb-hPm"/>
-                            <constraint firstItem="iTO-Ie-Ybv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="oeD-kY-okL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Ra-Yr-5Ia" secondAttribute="bottom" constant="20" id="Gw9-kM-YXN"/>
+                            <constraint firstItem="9Ra-Yr-5Ia" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PoY-03-iGW"/>
+                            <constraint firstItem="9Ra-Yr-5Ia" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="VC1-ly-api"/>
+                            <constraint firstItem="9Ra-Yr-5Ia" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="W0Z-W7-kGH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Ra-Yr-5Ia" secondAttribute="trailing" constant="20" id="jra-IV-e4m"/>
+                            <constraint firstItem="9Ra-Yr-5Ia" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qqo-gs-eoa"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -57,11 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="fed_appLogoFinal" width="500" height="509"/>
     </resources>
 </document>
