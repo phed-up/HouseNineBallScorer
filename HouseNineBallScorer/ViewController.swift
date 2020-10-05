@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //to prevent view from going into sleep mode
+        UIApplication.shared.isIdleTimerDisabled = true
+        
         winnerLabel.isHidden = true
         
         player1NameLabel.text = player1Name
@@ -35,10 +38,11 @@ class ViewController: UIViewController {
     }
     
     //to prevent view from going into sleep mode
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UIApplication.shared.isIdleTimerDisabled = true
-        return true
-    }
+//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        UIApplication.shared.isIdleTimerDisabled = true
+//        return true
+//    }
+    
     
     
     
@@ -2020,6 +2024,8 @@ class ViewController: UIViewController {
             
             print("Player 2 Wins!")
         }
+        
+
                 
     }
     
