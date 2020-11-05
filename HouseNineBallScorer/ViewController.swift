@@ -258,12 +258,12 @@ class ViewController: UIViewController {
     }
     
     func showAlert() {
-        let alert = UIAlertController(title: "Alert", message: "Are you sure you want to quit this game?", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Alert", message: "Are you sure you want to quit this game?", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in self.dismiss(animated: true, completion: nil)}))
                         
-        present(alert, animated: true)
+        self.present(alert, animated: true, completion: nil)
         
     }
     

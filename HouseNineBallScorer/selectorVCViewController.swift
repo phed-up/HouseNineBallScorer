@@ -68,7 +68,8 @@ class selectorVCViewController: UIViewController, UIPickerViewDataSource, UIPick
     }
     
     
-    var url = "https://apps.apple.com/us/app/runnin-out/id1534262908"
+//    var url = "https://apps.apple.com/us/app/runnin-out/id1534262908"
+    var url = "https://apps.apple.com/us/app/id1534262908"
     
     let valueArray = ["3", "2"]
     var nineballValueSelected = 3
